@@ -1,0 +1,35 @@
+{
+  "name": "express-react-app",
+  "version": "1.0.0",
+  "description": "Barebones environment for serving react app from node server.",
+  "main": "server/src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config ./webpack.config.js --mode 'development'",
+    "~build": "npx webpack --config ./webpack.config.js --mode 'development' --watch",
+    "server-watch": "npx nodemon server/src/server.js",
+    "server": "node server/src/server.js"
+  },
+  "author": "Beth Townsend",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-google": "^0.10.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "dev": "^0.1.3",
+    "express": "^4.16.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
